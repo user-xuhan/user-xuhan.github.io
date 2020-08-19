@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://xuhan123.cn">
   <title>记录一个apk打包的报错 | 徐晗的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天打包的时候一直出现下面的报错 1Cause: buildOutput.apkData must not be null  手动clean-&gt;rebuild和restart都不能解决，遂百度一下发现自己之前也遇到过但是忘记了。 随手记录一下防止再忘。 出现这个报错是因为打包路径下已经有重复apk包了，删掉apk包后就可以正常打包了。">
+  <meta name="description" content="今天打包的时候一直出现下面的报错 1Cause: buildOutput.apkData must not be null  手动clean-&gt;rebuild和restart都不能解决，遂百度一下发现自己之前也遇到过但是忘记了。 随手记录一下防止再忘。 出现这个报错是因为打包路径下output.json冲突了，删掉apk包后就可以正常打包了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录一个apk打包的报错">
 <meta property="og:url" content="http://xuhan123.cn/2020/08/19/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%AAapk%E6%89%93%E5%8C%85%E7%9A%84%E6%8A%A5%E9%94%99/index.html">
 <meta property="og:site_name" content="徐晗的博客">
-<meta property="og:description" content="今天打包的时候一直出现下面的报错 1Cause: buildOutput.apkData must not be null  手动clean-&gt;rebuild和restart都不能解决，遂百度一下发现自己之前也遇到过但是忘记了。 随手记录一下防止再忘。 出现这个报错是因为打包路径下已经有重复apk包了，删掉apk包后就可以正常打包了。">
+<meta property="og:description" content="今天打包的时候一直出现下面的报错 1Cause: buildOutput.apkData must not be null  手动clean-&gt;rebuild和restart都不能解决，遂百度一下发现自己之前也遇到过但是忘记了。 随手记录一下防止再忘。 出现这个报错是因为打包路径下output.json冲突了，删掉apk包后就可以正常打包了。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-08-19T03:58:05.000Z">
-<meta property="article:modified_time" content="2020-08-19T06:53:14.282Z">
+<meta property="article:modified_time" content="2020-08-19T06:58:41.254Z">
 <meta property="article:author" content="徐晗">
 <meta property="article:tag" content="android">
 <meta name="twitter:card" content="summary">
@@ -181,7 +181,7 @@ var _hmt = _hmt || [];
 
 <p>手动clean-&gt;rebuild和restart都不能解决，遂百度一下发现自己之前也遇到过但是忘记了。</p>
 <p>随手记录一下防止再忘。</p>
-<p>出现这个报错是因为打包路径下已经有重复apk包了，删掉apk包后就可以正常打包了。</p>
+<p>出现这个报错是因为打包路径下output.json冲突了，删掉apk包后就可以正常打包了。</p>
 
       
 
